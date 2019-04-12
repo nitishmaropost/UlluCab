@@ -1,0 +1,527 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7A0BECBC8C4B1CE7FB157F44 /* Pods_UlluCab.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42022601F4AE0DE1414E11C5 /* Pods_UlluCab.framework */; };
+		BF39BF7F225C76B900B70AC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF39BF7E225C76B900B70AC6 /* AppDelegate.swift */; };
+		BF39BF81225C76B900B70AC6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF39BF80225C76B900B70AC6 /* ViewController.swift */; };
+		BF39BF84225C76B900B70AC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF39BF82225C76B900B70AC6 /* Main.storyboard */; };
+		BF39BF86225C76BB00B70AC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF39BF85225C76BB00B70AC6 /* Assets.xcassets */; };
+		BF39BF89225C76BB00B70AC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF39BF87225C76BB00B70AC6 /* LaunchScreen.storyboard */; };
+		BF39BF95225C77D100B70AC6 /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF39BF94225C77D100B70AC6 /* Authentication.storyboard */; };
+		BF39BF98225C7C3400B70AC6 /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF39BF97225C7C3400B70AC6 /* DesignableTextField.swift */; };
+		BF39BF9A225C883400B70AC6 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF39BF99225C883400B70AC6 /* RoundedButton.swift */; };
+		BF39BF9C225C9FF600B70AC6 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF39BF9B225C9FF600B70AC6 /* LoginVC.swift */; };
+		BFA5646E225DBE4D0057C3EA /* PlaceholderIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA5646D225DBE4D0057C3EA /* PlaceholderIcon.swift */; };
+		BFA56470225DC7CB0057C3EA /* HRToast+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA5646F225DC7CB0057C3EA /* HRToast+UIView.swift */; };
+		BFA56472225DF7450057C3EA /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA56471225DF7450057C3EA /* HomeVC.swift */; };
+		BFF44E32225F0707009F8061 /* UlluColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF44E31225F0707009F8061 /* UlluColors.swift */; };
+		BFF44E34225F0B06009F8061 /* UlluConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF44E33225F0B06009F8061 /* UlluConstants.swift */; };
+		BFF44E37225F1276009F8061 /* UlluLocationClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF44E36225F1276009F8061 /* UlluLocationClient.swift */; };
+		BFF44E39225F15ED009F8061 /* UlluEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF44E38225F15ED009F8061 /* UlluEnums.swift */; };
+		BFF44E3B225F165D009F8061 /* UlluProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF44E3A225F165D009F8061 /* UlluProtocols.swift */; };
+		BFF44E3D22605E6F009F8061 /* map-style.json in Resources */ = {isa = PBXBuildFile; fileRef = BFF44E3C22605CFB009F8061 /* map-style.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		42022601F4AE0DE1414E11C5 /* Pods_UlluCab.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UlluCab.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF39BF7B225C76B900B70AC6 /* UlluCab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UlluCab.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF39BF7E225C76B900B70AC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BF39BF80225C76B900B70AC6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BF39BF83225C76B900B70AC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BF39BF85225C76BB00B70AC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF39BF88225C76BB00B70AC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BF39BF8A225C76BB00B70AC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF39BF94225C77D100B70AC6 /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
+		BF39BF97225C7C3400B70AC6 /* DesignableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableTextField.swift; sourceTree = "<group>"; };
+		BF39BF99225C883400B70AC6 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		BF39BF9B225C9FF600B70AC6 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		BFA5646D225DBE4D0057C3EA /* PlaceholderIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderIcon.swift; sourceTree = "<group>"; };
+		BFA5646F225DC7CB0057C3EA /* HRToast+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HRToast+UIView.swift"; sourceTree = "<group>"; };
+		BFA56471225DF7450057C3EA /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		BFF44E31225F0707009F8061 /* UlluColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UlluColors.swift; sourceTree = "<group>"; };
+		BFF44E33225F0B06009F8061 /* UlluConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UlluConstants.swift; sourceTree = "<group>"; };
+		BFF44E36225F1276009F8061 /* UlluLocationClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UlluLocationClient.swift; sourceTree = "<group>"; };
+		BFF44E38225F15ED009F8061 /* UlluEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UlluEnums.swift; sourceTree = "<group>"; };
+		BFF44E3A225F165D009F8061 /* UlluProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UlluProtocols.swift; sourceTree = "<group>"; };
+		BFF44E3C22605CFB009F8061 /* map-style.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "map-style.json"; sourceTree = "<group>"; };
+		F03E9565D9907BF409F35AA6 /* Pods-UlluCab.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UlluCab.release.xcconfig"; path = "Pods/Target Support Files/Pods-UlluCab/Pods-UlluCab.release.xcconfig"; sourceTree = "<group>"; };
+		FEFFC1F8EEAC3A2A92794AED /* Pods-UlluCab.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UlluCab.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UlluCab/Pods-UlluCab.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF39BF78225C76B900B70AC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A0BECBC8C4B1CE7FB157F44 /* Pods_UlluCab.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E0C33ECFBF906B73DF39265 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FEFFC1F8EEAC3A2A92794AED /* Pods-UlluCab.debug.xcconfig */,
+				F03E9565D9907BF409F35AA6 /* Pods-UlluCab.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3F576C863B7352FE672B81E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42022601F4AE0DE1414E11C5 /* Pods_UlluCab.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF39BF72225C76B900B70AC6 = {
+			isa = PBXGroup;
+			children = (
+				BF39BF7D225C76B900B70AC6 /* UlluCab */,
+				BF39BF7C225C76B900B70AC6 /* Products */,
+				3E0C33ECFBF906B73DF39265 /* Pods */,
+				3F576C863B7352FE672B81E2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BF39BF7C225C76B900B70AC6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF39BF7B225C76B900B70AC6 /* UlluCab.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF39BF7D225C76B900B70AC6 /* UlluCab */ = {
+			isa = PBXGroup;
+			children = (
+				BFF44E35225F103E009F8061 /* LocationManager */,
+				BFF44E30225F067D009F8061 /* Constants */,
+				BF39BF96225C7AE900B70AC6 /* ExtensionsAndProtocols */,
+				BF39BF93225C777800B70AC6 /* Assets */,
+				BF39BF92225C777100B70AC6 /* Common */,
+				BF39BF91225C775300B70AC6 /* Storyboards */,
+				BF39BF90225C774600B70AC6 /* ViewControllers */,
+				BF39BF80225C76B900B70AC6 /* ViewController.swift */,
+			);
+			path = UlluCab;
+			sourceTree = "<group>";
+		};
+		BF39BF90225C774600B70AC6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BF39BF9B225C9FF600B70AC6 /* LoginVC.swift */,
+				BFA56471225DF7450057C3EA /* HomeVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BF39BF91225C775300B70AC6 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				BF39BF87225C76BB00B70AC6 /* LaunchScreen.storyboard */,
+				BF39BF82225C76B900B70AC6 /* Main.storyboard */,
+				BF39BF94225C77D100B70AC6 /* Authentication.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		BF39BF92225C777100B70AC6 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				BF39BF7E225C76B900B70AC6 /* AppDelegate.swift */,
+				BF39BF8A225C76BB00B70AC6 /* Info.plist */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		BF39BF93225C777800B70AC6 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				BF39BF85225C76BB00B70AC6 /* Assets.xcassets */,
+				BFF44E3C22605CFB009F8061 /* map-style.json */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		BF39BF96225C7AE900B70AC6 /* ExtensionsAndProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				BFA5646F225DC7CB0057C3EA /* HRToast+UIView.swift */,
+				BF39BF99225C883400B70AC6 /* RoundedButton.swift */,
+				BF39BF97225C7C3400B70AC6 /* DesignableTextField.swift */,
+				BFA5646D225DBE4D0057C3EA /* PlaceholderIcon.swift */,
+				BFF44E3A225F165D009F8061 /* UlluProtocols.swift */,
+			);
+			path = ExtensionsAndProtocols;
+			sourceTree = "<group>";
+		};
+		BFF44E30225F067D009F8061 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				BFF44E31225F0707009F8061 /* UlluColors.swift */,
+				BFF44E33225F0B06009F8061 /* UlluConstants.swift */,
+				BFF44E38225F15ED009F8061 /* UlluEnums.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		BFF44E35225F103E009F8061 /* LocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				BFF44E36225F1276009F8061 /* UlluLocationClient.swift */,
+			);
+			path = LocationManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF39BF7A225C76B900B70AC6 /* UlluCab */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF39BF8D225C76BB00B70AC6 /* Build configuration list for PBXNativeTarget "UlluCab" */;
+			buildPhases = (
+				5C27946E4509C8E011B92F74 /* [CP] Check Pods Manifest.lock */,
+				BF39BF77225C76B900B70AC6 /* Sources */,
+				BF39BF78225C76B900B70AC6 /* Frameworks */,
+				BF39BF79225C76B900B70AC6 /* Resources */,
+				FE2CADE66CA46B8F6CA6AB14 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UlluCab;
+			productName = UlluCab;
+			productReference = BF39BF7B225C76B900B70AC6 /* UlluCab.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF39BF73225C76B900B70AC6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = maropost;
+				TargetAttributes = {
+					BF39BF7A225C76B900B70AC6 = {
+						CreatedOnToolsVersion = 10.2;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = BF39BF76225C76B900B70AC6 /* Build configuration list for PBXProject "UlluCab" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF39BF72225C76B900B70AC6;
+			productRefGroup = BF39BF7C225C76B900B70AC6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF39BF7A225C76B900B70AC6 /* UlluCab */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF39BF79225C76B900B70AC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF39BF95225C77D100B70AC6 /* Authentication.storyboard in Resources */,
+				BF39BF89225C76BB00B70AC6 /* LaunchScreen.storyboard in Resources */,
+				BFF44E3D22605E6F009F8061 /* map-style.json in Resources */,
+				BF39BF86225C76BB00B70AC6 /* Assets.xcassets in Resources */,
+				BF39BF84225C76B900B70AC6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5C27946E4509C8E011B92F74 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UlluCab-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE2CADE66CA46B8F6CA6AB14 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-UlluCab/Pods-UlluCab-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlacePicker/Frameworks/GooglePlacePicker.framework/Resources/GooglePlacePicker.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlacePicker.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UlluCab/Pods-UlluCab-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF39BF77225C76B900B70AC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF39BF81225C76B900B70AC6 /* ViewController.swift in Sources */,
+				BFA56472225DF7450057C3EA /* HomeVC.swift in Sources */,
+				BF39BF98225C7C3400B70AC6 /* DesignableTextField.swift in Sources */,
+				BF39BF7F225C76B900B70AC6 /* AppDelegate.swift in Sources */,
+				BFF44E39225F15ED009F8061 /* UlluEnums.swift in Sources */,
+				BFF44E37225F1276009F8061 /* UlluLocationClient.swift in Sources */,
+				BF39BF9A225C883400B70AC6 /* RoundedButton.swift in Sources */,
+				BFF44E3B225F165D009F8061 /* UlluProtocols.swift in Sources */,
+				BFA5646E225DBE4D0057C3EA /* PlaceholderIcon.swift in Sources */,
+				BFF44E32225F0707009F8061 /* UlluColors.swift in Sources */,
+				BFF44E34225F0B06009F8061 /* UlluConstants.swift in Sources */,
+				BF39BF9C225C9FF600B70AC6 /* LoginVC.swift in Sources */,
+				BFA56470225DC7CB0057C3EA /* HRToast+UIView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BF39BF82225C76B900B70AC6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF39BF83225C76B900B70AC6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BF39BF87225C76BB00B70AC6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF39BF88225C76BB00B70AC6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF39BF8B225C76BB00B70AC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BF39BF8C225C76BB00B70AC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF39BF8E225C76BB00B70AC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEFFC1F8EEAC3A2A92794AED /* Pods-UlluCab.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = LM89JMBV9C;
+				INFOPLIST_FILE = UlluCab/Common/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.development.maropost;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = MaropostDevelopment;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BF39BF8F225C76BB00B70AC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F03E9565D9907BF409F35AA6 /* Pods-UlluCab.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = LM89JMBV9C;
+				INFOPLIST_FILE = UlluCab/Common/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.development.maropost;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = MaropostDevelopment;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF39BF76225C76B900B70AC6 /* Build configuration list for PBXProject "UlluCab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF39BF8B225C76BB00B70AC6 /* Debug */,
+				BF39BF8C225C76BB00B70AC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF39BF8D225C76BB00B70AC6 /* Build configuration list for PBXNativeTarget "UlluCab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF39BF8E225C76BB00B70AC6 /* Debug */,
+				BF39BF8F225C76BB00B70AC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF39BF73225C76B900B70AC6 /* Project object */;
+}
