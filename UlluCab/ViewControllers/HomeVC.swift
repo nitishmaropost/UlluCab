@@ -42,6 +42,12 @@ class HomeVC: UIViewController {
         DispatchQueue.main.async {
             self.camera = GMSCameraPosition.camera(withLatitude: 30.67995, longitude: 76.72211, zoom: 17.0)
             self.mapView.animate(to: self.camera)
+            self.mapView.isMyLocationEnabled = true
+            self.mapView.settings.compassButton = true
+            
+            let userLocationMarker = GMSMarker(position: CLLocationCoordinate2DMake(30.67995, 76.72211))
+            userLocationMarker.icon = UIImage(named: "pin_map.png")
+            userLocationMarker.map = self.mapView
         }
     }
 }

@@ -9,23 +9,36 @@ PODS:
     - GooglePlaces (= 3.0.3)
   - GooglePlaces (3.0.3):
     - GoogleMaps/Base (= 3.0.3)
+  - RimhTypingLetters (0.1.1)
+  - RxCocoa (4.5.0):
+    - RxSwift (>= 4.4.2, ~> 4.4)
+  - RxSwift (4.5.0)
 
 DEPENDENCIES:
   - GoogleMaps
   - GooglePlacePicker
   - GooglePlaces
+  - RimhTypingLetters
+  - RxCocoa (~> 4.0)
+  - RxSwift (~> 4.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - GoogleMaps
     - GooglePlacePicker
     - GooglePlaces
+    - RimhTypingLetters
+    - RxCocoa
+    - RxSwift
 
 SPEC CHECKSUMS:
   GoogleMaps: fd5c9fa58871781b9fb94d4936f19c69fe60ce32
   GooglePlacePicker: 0c90898945f02ef36cce86fc9a107e1c5d3d26b1
   GooglePlaces: f09e76993c9c3ee4af8f4f7f535bb94d6aa3b649
+  RimhTypingLetters: 914370e62a8280bcfc44bbcd887323bbaa0df609
+  RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
+  RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
 
-PODFILE CHECKSUM: 6365be68679e51d25a0263da27df681322b6965d
+PODFILE CHECKSUM: f63d65abdeafd03d8a8ec4d5b47c33b38850f531
 
 COCOAPODS: 1.5.3

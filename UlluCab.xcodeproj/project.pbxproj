@@ -26,6 +26,9 @@
 		BFF44E39225F15ED009F8061 /* UlluEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF44E38225F15ED009F8061 /* UlluEnums.swift */; };
 		BFF44E3B225F165D009F8061 /* UlluProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF44E3A225F165D009F8061 /* UlluProtocols.swift */; };
 		BFF44E3D22605E6F009F8061 /* map-style.json in Resources */ = {isa = PBXBuildFile; fileRef = BFF44E3C22605CFB009F8061 /* map-style.json */; };
+		BFF44E4022647DB4009F8061 /* InitialAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF44E3E22647DB4009F8061 /* InitialAnimationVC.swift */; };
+		BFF44E4122647DB4009F8061 /* InitialAnimationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFF44E3F22647DB4009F8061 /* InitialAnimationVC.xib */; };
+		BFF44E4522659EA8009F8061 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF44E4422659EA8009F8061 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +53,9 @@
 		BFF44E38225F15ED009F8061 /* UlluEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UlluEnums.swift; sourceTree = "<group>"; };
 		BFF44E3A225F165D009F8061 /* UlluProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UlluProtocols.swift; sourceTree = "<group>"; };
 		BFF44E3C22605CFB009F8061 /* map-style.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "map-style.json"; sourceTree = "<group>"; };
+		BFF44E3E22647DB4009F8061 /* InitialAnimationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialAnimationVC.swift; sourceTree = "<group>"; };
+		BFF44E3F22647DB4009F8061 /* InitialAnimationVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InitialAnimationVC.xib; sourceTree = "<group>"; };
+		BFF44E4422659EA8009F8061 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		F03E9565D9907BF409F35AA6 /* Pods-UlluCab.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UlluCab.release.xcconfig"; path = "Pods/Target Support Files/Pods-UlluCab/Pods-UlluCab.release.xcconfig"; sourceTree = "<group>"; };
 		FEFFC1F8EEAC3A2A92794AED /* Pods-UlluCab.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UlluCab.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UlluCab/Pods-UlluCab.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,6 +110,8 @@
 		BF39BF7D225C76B900B70AC6 /* UlluCab */ = {
 			isa = PBXGroup;
 			children = (
+				BFF44E4322659C66009F8061 /* Models */,
+				BFF44E4222659C5B009F8061 /* ViewModels */,
 				BFF44E35225F103E009F8061 /* LocationManager */,
 				BFF44E30225F067D009F8061 /* Constants */,
 				BF39BF96225C7AE900B70AC6 /* ExtensionsAndProtocols */,
@@ -121,6 +129,8 @@
 			children = (
 				BF39BF9B225C9FF600B70AC6 /* LoginVC.swift */,
 				BFA56471225DF7450057C3EA /* HomeVC.swift */,
+				BFF44E3E22647DB4009F8061 /* InitialAnimationVC.swift */,
+				BFF44E3F22647DB4009F8061 /* InitialAnimationVC.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -183,6 +193,21 @@
 			path = LocationManager;
 			sourceTree = "<group>";
 		};
+		BFF44E4222659C5B009F8061 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				BFF44E4422659EA8009F8061 /* HomeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		BFF44E4322659C66009F8061 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -195,6 +220,7 @@
 				BF39BF78225C76B900B70AC6 /* Frameworks */,
 				BF39BF79225C76B900B70AC6 /* Resources */,
 				FE2CADE66CA46B8F6CA6AB14 /* [CP] Copy Pods Resources */,
+				B196A364D1FFFDEA4EBDBA30 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,6 +278,7 @@
 				BF39BF89225C76BB00B70AC6 /* LaunchScreen.storyboard in Resources */,
 				BFF44E3D22605E6F009F8061 /* map-style.json in Resources */,
 				BF39BF86225C76BB00B70AC6 /* Assets.xcassets in Resources */,
+				BFF44E4122647DB4009F8061 /* InitialAnimationVC.xib in Resources */,
 				BF39BF84225C76B900B70AC6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +302,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B196A364D1FFFDEA4EBDBA30 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-UlluCab/Pods-UlluCab-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RimhTypingLetters/RimhTypingLetters.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RimhTypingLetters.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UlluCab/Pods-UlluCab-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FE2CADE66CA46B8F6CA6AB14 /* [CP] Copy Pods Resources */ = {
@@ -318,6 +367,8 @@
 				BFF44E32225F0707009F8061 /* UlluColors.swift in Sources */,
 				BFF44E34225F0B06009F8061 /* UlluConstants.swift in Sources */,
 				BF39BF9C225C9FF600B70AC6 /* LoginVC.swift in Sources */,
+				BFF44E4022647DB4009F8061 /* InitialAnimationVC.swift in Sources */,
+				BFF44E4522659EA8009F8061 /* HomeViewModel.swift in Sources */,
 				BFA56470225DC7CB0057C3EA /* HRToast+UIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

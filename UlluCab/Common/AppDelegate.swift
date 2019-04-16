@@ -23,6 +23,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         GMSServices.provideAPIKey(UlluConstants.shared.GOOGLE_API_KEY)
         GMSPlacesClient.provideAPIKey(UlluConstants.shared.GOOGLE_API_KEY)
         UlluLocationClient.shared.startReportingLocation()
+        
+        let initialVC = InitialAnimationVC(nibName: "InitialAnimationVC", bundle: nil)
+       // self.window?.rootViewController!.present(initialVC, animated: true, completion: nil)
+       self.window?.rootViewController = initialVC
         return true
     }
 
