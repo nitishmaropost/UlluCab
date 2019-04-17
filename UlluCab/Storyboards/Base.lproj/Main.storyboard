@@ -36,8 +36,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zCI-RI-uNi" customClass="GMSMapView">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mmq-Xe-XDS">
+                                <rect key="frame" x="0.0" y="747" width="414" height="150"/>
+                                <color key="backgroundColor" red="0.043137254899999998" green="0.2156862745" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="zzM-Oo-xmq"/>
+                                </constraints>
                             </view>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter pick location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C24-Bw-2xP" customClass="DesignableTextField" customModule="UlluCab" customModuleProvider="target">
                                 <rect key="frame" x="20" y="118" width="374" height="50"/>
@@ -101,13 +108,16 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="fUE-KK-7D4" firstAttribute="leading" secondItem="PiC-fq-Zkr" secondAttribute="leading" constant="20" id="1M4-Ak-3Mg"/>
+                            <constraint firstItem="PiC-fq-Zkr" firstAttribute="bottom" secondItem="mmq-Xe-XDS" secondAttribute="bottom" constant="-35" id="4g0-aJ-JEW"/>
                             <constraint firstItem="PiC-fq-Zkr" firstAttribute="trailing" secondItem="C24-Bw-2xP" secondAttribute="trailing" constant="20" id="9hG-j1-5hJ"/>
                             <constraint firstItem="PiC-fq-Zkr" firstAttribute="trailing" secondItem="fUE-KK-7D4" secondAttribute="trailing" constant="20" id="E3w-2Q-O93"/>
+                            <constraint firstItem="mmq-Xe-XDS" firstAttribute="leading" secondItem="PiC-fq-Zkr" secondAttribute="leading" id="MC4-Ej-aHU"/>
                             <constraint firstItem="C24-Bw-2xP" firstAttribute="top" secondItem="PiC-fq-Zkr" secondAttribute="top" constant="30" id="Mod-NB-SYf"/>
-                            <constraint firstItem="zCI-RI-uNi" firstAttribute="top" secondItem="PiC-fq-Zkr" secondAttribute="top" id="T0g-DZ-0zW"/>
+                            <constraint firstItem="zCI-RI-uNi" firstAttribute="top" secondItem="PiC-fq-Zkr" secondAttribute="top" constant="-88" id="T0g-DZ-0zW"/>
                             <constraint firstItem="C24-Bw-2xP" firstAttribute="leading" secondItem="PiC-fq-Zkr" secondAttribute="leading" constant="20" id="a1I-O4-iIz"/>
                             <constraint firstItem="fUE-KK-7D4" firstAttribute="top" secondItem="C24-Bw-2xP" secondAttribute="bottom" id="dTy-jB-Sm7"/>
                             <constraint firstItem="zCI-RI-uNi" firstAttribute="leading" secondItem="PiC-fq-Zkr" secondAttribute="leading" id="e0g-bL-5qI"/>
+                            <constraint firstItem="mmq-Xe-XDS" firstAttribute="trailing" secondItem="PiC-fq-Zkr" secondAttribute="trailing" id="oA1-G1-HKm"/>
                             <constraint firstItem="PiC-fq-Zkr" firstAttribute="bottom" secondItem="zCI-RI-uNi" secondAttribute="bottom" constant="-34" id="plN-Em-GBv"/>
                             <constraint firstItem="PiC-fq-Zkr" firstAttribute="trailing" secondItem="zCI-RI-uNi" secondAttribute="trailing" id="vbe-Ip-xNy"/>
                         </constraints>
@@ -115,9 +125,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="jiA-iy-Itj"/>
                     <connections>
+                        <outlet property="constraint_height_viewTaxi" destination="zzM-Oo-xmq" id="BZ6-oW-Vfg"/>
                         <outlet property="mapView" destination="zCI-RI-uNi" id="Hps-7e-jCv"/>
                         <outlet property="textFieldDestination" destination="fUE-KK-7D4" id="pd7-QT-Uo7"/>
                         <outlet property="textFieldSource" destination="C24-Bw-2xP" id="h2n-pI-c7h"/>
+                        <outlet property="viewTaxi" destination="mmq-Xe-XDS" id="CT0-bV-IgI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BMy-zS-McF" userLabel="First Responder" sceneMemberID="firstResponder"/>
